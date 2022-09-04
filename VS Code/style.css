@@ -1,0 +1,59 @@
+body h1{
+    color: blue;                         /* Spasify the colour fo text */
+    text-align: center;                    /* It deside where text lies */
+    background-color: chocolate;         /*It will round the border*/
+    border-radius: 10px;
+    box-sizing: content-box;
+    margin: 9px 486px;
+    padding: 8px;
+}
+
+body h2{
+    color: blue;
+    text-align: center;
+    background-color: chocolate;
+    border-radius: 10px;
+    margin: 9px 517px;
+    padding: 8px;
+}
+
+#sub{
+    border-radius: 20px;
+    margin: 9px 620px;
+    padding: 13px 28px;
+    
+}
+
+body h3{
+    color: blue;
+    text-align: center;
+    background-color: chocolate;
+    border-radius: 10px;
+    margin: 9px 537px;
+    padding: 8px;
+}
+
+body h4{
+    color: blue;
+    text-align: center;
+    background-color: chocolate;
+    border-radius: 10px;
+    margin: 9px 554px;
+    padding: 8px;
+}
+body h5{
+    color: blue;
+    text-align: center;
+    background-color: chocolate;
+    border-radius: 10px;
+    margin: 9px 574px;
+    padding: 8px;
+}
+body h6{
+    color: blue;
+    text-align: center;
+    background-color: chocolate;
+    border-radius: 10px;
+    margin: 9px 592px;
+    padding: 8px;
+}

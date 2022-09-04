@@ -1,0 +1,14 @@
+header{
+    background: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div{
+    display: flex;
+    justify-content:start;
+    padding: 10px 10px;
+}
+div a{
+    flex-grow: 1; 
+    color: blanchedalmond;
+    text-decoration: none;
+}
