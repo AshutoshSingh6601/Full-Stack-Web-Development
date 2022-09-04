@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">name</th>
+        <th scope="col">email</th>
+        <th scope="col">password</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+      <tr>
+        <th scope="row">{{user_info.id}}</th>
+        <td>{{user_info.username}}</td>
+        <td>{{user_info.email}}</td>
+        <td>{{user_info.password}}</td>
+        <td>{{user_info.date_time}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
+
+{% endblock  %}
