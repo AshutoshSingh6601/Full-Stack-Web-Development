@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form class="row g-3 container m-auto" method='POST' action="{% url 'login_form' %}">
+    {%csrf_token%}
+    <div class="col-md-12">
+      <label for="inputEmail4" class="form-label">Username</label>
+      <input type="text" name="username" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-12">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" name='password' class="form-control" id="inputPassword4">
+    </div>
+    <div class="mb-3">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+          <label class="form-check-label" for="dropdownCheck">
+            Remember me
+          </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+    <p>New around here?<a href="{% url 'register_form' %}"> Sign up</a></p>
+    <a href="#">Forgot password?</a>
+</form>
+
+{% endblock %}
