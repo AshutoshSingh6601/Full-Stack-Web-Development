@@ -1,0 +1,173 @@
+/* <!-- ------------------carousel section Start------------------- --> */
+
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+}
+.carousel-item {
+    width: 100%;
+    height: 100vh;
+}
+.carousel-caption{
+    padding-bottom: 16.25rem;
+}
+
+.carousel-heading{
+    font-size: 2rem;
+    letter-spacing: .4rem;
+}
+
+/* <!-- ------------------Swiper section Start------------------- --> */
+
+html,
+body {
+position: relative;
+height: 100%;
+}
+
+body {
+background: #eee;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: #000;
+margin: 0;
+padding: 0;
+}
+
+.swiper {
+width: 100%;
+height: 25%;
+padding: 1rem 0;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+margin: 1rem;
+width: 3rem;
+
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+border: 2px solid rgb(0, 69, 158);
+}
+
+
+/* ===========navbar=========== */
+.nav-right{
+    display: flex;
+    justify-content: end;
+}
+
+/* ================mySwiper-service============= */
+
+.mySwiper-service{
+    background: rgb(97, 180, 221);
+}
+
+.swiper-slide img.srevice-img{
+    width: 80%;
+}
+.mySwiper-service .swiper-slide{
+    margin-bottom: 6rem;
+}
+
+.service-img img{
+    border: transparent;
+    background: rgb(97, 180, 221);
+    width: 2rem;
+}
+/* =============Facts section Start============= */
+
+.fact-section{
+    background: url('https://acmemep.com/wp-content/uploads/2019/06/preventative-maintenance-package2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ===============Client=============== */
+
+.client-Swiper .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    background: none ;
+    font-size: .9rem;
+    color: gray;
+}
+.client .swiper{
+    padding: 0rem !important;
+}
+.client{
+    background: white;
+    text-align: justify;
+    text-align-last: center;
+}
+.text-justify{
+    text-align: justify;
+}
+.client-header{
+    font-size: 2.3rem ;
+}
+.client-Swiper .swiper-slide img{
+    width: 10rem;
+    border: none;
+    background: none;
+}
+.fs-7{
+    font-size: .9rem;
+    /* font-weight: bolder; */
+}
+
+
+/* ===============Contact=============== */
+
+.contact{
+    background: rgb(0, 149, 223);
+}
+
+.btn-outline-light:hover {
+    color: rgb(0, 149, 223);
+}
+
+.btn-outline-light{
+    border: 2px solid white;
+}
+
+
+/* ===============Footer=============== */
+
+.icon-hover:hover{
+    color: gray !important;
+}
+
+
+
+.gray{
+    background: darkgray;
+}
+.footer-second p{
+    margin-bottom: 0rem;
+}
+.light-gray{
+    color: rgb(212, 209, 209);
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .photos {
+        /* border: 2px solid black; */
+        /* margin: 10px; */
+        margin-bottom: -10px;
+    }
+
+    img {
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all .6s ease;
+        height: 400px;
+
+    }
+
+    img:hover {
+        transform: rotate(4deg);
+        box-shadow: 7px 12px 20px rgba(199, 87, 87, 0.829);
+    }
+
+    .container {
+        float: left;
+        padding: 20px;
+        width: 23.20%;
+        margin: 10px;
+        border-radius: 20px;
+        background: rgb(236, 227, 227);
+        box-shadow: 1px 3px 10px rgb(148, 141, 141);
+    }
+
+    .disc {
+        background: rgb(236, 227, 227);
+        text-align: center;
+        padding-top: 10px;
+        font-size: 15px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+
+    footer {
+        height: 8vh;
+        width: 100%;
+        background: lightgreen;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* footer p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+    @media only screen and (max-width:1115px) {
+        .container {
+            width: 27.80%;
+        }
+    }
+
+    @media only screen and (max-width:700px) {
+        .container {
+            width: 42.90%;
+            padding: 3px;
+        }
+    }
+
+    @media only screen and (max-width:425px) {
+        .container {
+            width: 42.90%;
+            padding: 10px;
+        }
+    }
+
+    @media only screen and (max-width:423px) {
+        .container {
+            width: 94%;
+        }
+    }
+    .main-container{
+        background: black;
+    }
+    .main-container::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+</style>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="photos">
+                <a href="https://pbs.twimg.com/profile_images/1458290453070041090/jimghuPH_400x400.jpg"
+                    target="--blank">
+                    <img src="https://pbs.twimg.com/profile_images/1458290453070041090/jimghuPH_400x400.jpg" alt="">
+                </a>
+                <p class="disc">It's a fruits</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photos">
+                <a href="https://www.india.com/wp-content/uploads/2021/09/Virat-Kohli-Shirtless-Pic.jpg"
+                    target="--blank">
+                    <img src="https://www.india.com/wp-content/uploads/2021/09/Virat-Kohli-Shirtless-Pic.jpg">
+                </a>
+                <p class="disc">It's a fruits</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photos">
+                <a href="https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/olq9supnhpam3oao_1626669427.jpeg"
+                    target="--blank">
+                    <img src="https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/olq9supnhpam3oao_1626669427.jpeg"
+                        alt="">
+                </a>
+                <p class="disc">It's a fruits</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photos">
+                <a href="https://www.timesofsports.com/wp-content/uploads/2020/11/Dhoni-CSK.png" target="--blank">
+                    <img src="https://www.timesofsports.com/wp-content/uploads/2020/11/Dhoni-CSK.png" alt="">
+                </a>
+                <p class="disc">It's a fruits</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photos">
+                <a href="https://manofmany.com/wp-content/uploads/2021/06/john-cena-workout-and-diet-plan-1200x800.jpg"
+                    target="--blank">
+                    <img src="https://manofmany.com/wp-content/uploads/2021/06/john-cena-workout-and-diet-plan-1200x800.jpg"
+                        alt="">
+                </a>
+                <p class="disc">It's a fruits</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photos">
+                <a href="https://static01.nyt.com/images/2021/05/25/multimedia/25xp-johncena/25xp-johncena-mobileMasterAt3x.jpg"
+                    target="--blank">
+                    <img src="https://static01.nyt.com/images/2021/05/25/multimedia/25xp-johncena/25xp-johncena-mobileMasterAt3x.jpg"
+                        alt="">
+                </a>
+                <p class="disc">It's a fruits</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photos">
+                <a href="https://images.thequint.com/thequint%2F2021-10%2F623bfdc5-1fa4-406c-9ee3-fb771b17327a%2FHero_Image_2.jpg"
+                    target="--blank">
+                    <img src="https://images.thequint.com/thequint%2F2021-10%2F623bfdc5-1fa4-406c-9ee3-fb771b17327a%2FHero_Image_2.jpg"
+                        alt="">
+                </a>
+                <p class="disc">It's a fruits</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photos">
+                <a href="https://m.media-amazon.com/images/M/MV5BZGM4YmRiMWQtMDdhMC00NzIyLWFkNjktNGE4NTg5OWE5Y2Q2XkEyXkFqcGdeQXVyMTExMTc3NzU5._V1_UY1200_CR92,0,630,1200_AL_.jpg"
+                    target="--blank">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZGM4YmRiMWQtMDdhMC00NzIyLWFkNjktNGE4NTg5OWE5Y2Q2XkEyXkFqcGdeQXVyMTExMTc3NzU5._V1_UY1200_CR92,0,630,1200_AL_.jpg"
+                        alt="">
+                </a>
+                <p class="disc">It's a fruits</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; All Rights Reserved by Ashutosh</p>
+    </footer>
+</body>
+
+</html>

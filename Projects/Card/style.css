@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Montserrat:wght@300&family=Poppins&family=Secular+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ========reusable code======== */
+:root{
+    --first_color: #2082e9;
+    --second_color: #9900ff;
+}
+
+body{
+    background-color: rgb(179, 179, 179);
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-image: linear-gradient(to bottom left , var(--second_color) 50%, var(--first_color));
+    width: 20rem;
+    border-radius: 10px;
+    padding: 1rem;   
+    text-transform: uppercase;
+    color: white;
+}
+
+.name, .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name .logo-visa{
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.name h5{
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.cvv-no{
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.logo-visa{
+    display: flex;
+}
+.visa-d{
+    font-family: 'El Messiri', sans-serif;
+}
+
+.visa-isa{
+    font-family: 'Secular One', sans-serif;
+    font-weight: 100;
+}
+
+.valid{
+    font-size: .6rem;
+}
+
+.acc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    margin: 1.5rem 0 ;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa-solid{
+    transform: rotate(90deg);
+}

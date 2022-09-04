@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Resposive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background: url('https://images.unsplash.com/photo-1643646736753-04809d58cbf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDc3fENEd3V3WEpBYkV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-position: center center;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        border: 1px solid black;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    img {
+        margin: 10px 0px;
+        margin-top: 50px;
+    }
+
+    input,
+    .btn {
+        width: 75%;
+        padding: 10px;
+        margin: 10px 0px;
+        border: none;
+        border-radius: 7px;
+    }
+
+    h5 {
+        margin: 10px 0px;
+        margin-bottom: 20px;
+        color: blue;
+        cursor: pointer;
+        font-size: 19px;
+    }
+
+    h4 {
+        padding: 5px;
+        color: rgb(187, 187, 187);
+    }
+
+    h3 {
+        padding: 5px;
+    }
+
+    h4::after {
+        content: '';
+        display: inline-block;
+        background: rgb(187, 187, 187);
+        width: 35%;
+        height: 1px;
+        margin: 0px 0px 5px 10px;
+    }
+
+    h4::before {
+        content: '';
+        display: inline-block;
+        background: rgb(187, 187, 187);
+        width: 35%;
+        height: 1px;
+        margin: 0px 10px 5px 0px;
+    }
+
+    .btn {
+        background: darkred;
+        color: white;
+        cursor: pointer;
+    }
+
+    #google,
+    #facebook {
+        position: relative;
+    }
+
+    #google i,
+    #facebook i {
+        position: absolute;
+        top: 20px;
+        left: 55px;
+
+    }
+
+    .facebook-btn i {
+        color: white;
+        background: blue;
+    }
+
+    .facebook-btn {
+        background: blue;
+    }
+
+    .google-btn,
+    .facebook-btn {
+        padding: 10px;
+        width: 75%;
+        border-radius: 50px;
+        border: transparent;
+        font-size: 15px;
+        margin: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .google-btn i,
+    .facebook-btn i {
+        font-size: 15px;
+        position: absolute;
+        left: 20px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    @media screen and (max-width:530px) {
+        form {
+            margin: 0px 20px;
+        }
+
+        input,
+        .google-btn,
+        .facebook-btn {
+            width: 90%;
+        }
+
+    }
+
+    @media screen and (max-width: 310px) {
+
+        .google-btn i,
+        .facebook-btn i {
+            left: 10px;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form action="">
+            <img src="/First-Webside/img/logo.png">
+            <h3>Welcome to the Club</h3>
+            <p>Log in to continue. IT'S FREE</p>
+            <input type="email" name="" placeholder="Username or Email Address" id="" required>
+            <input type="password" name="" placeholder="Password" id="" required>
+            <button class="btn">Log In</button>
+            <h4>OR</h4>
+            <button class="facebook-btn"> <i class="fa-brands fa-facebook"></i> Continue with <span> Facebook </span>
+            </button>
+            <button class="google-btn"> <i class="fa-brands fa-google"></i> Continue with <span> Google </span>
+            </button>
+            <h5>Forget password</h5>
+        </form>
+    </div>
+</body>
+
+</html>
