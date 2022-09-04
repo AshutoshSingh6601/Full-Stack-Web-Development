@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  
+<table class="table" method='POST' action="{% url 'book_detail'%}">
+    {% csrf_token %}
+    <thead>
+      <tr>
+        <th scope="col">number</th>
+        <th scope="col">title</th>
+        <th scope="col">author</th>
+        <th scope="col">publisher</th>
+        <th scope="col">publication_date</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for detail in all_book %}
+      <tr>
+        <th scope="row">{{detail.id}}</th>
+        <td>{{detail.title}}</td>
+        <td><a href= "{% url 'author_detail' detail.authors.id %}"> {{detail.authors}} </a></td>
+        <td><a href= "{% url 'publisher_detail' detail.publishers.id %}"> {{detail.publishers}}</td>
+        <td>{{detail.publication_date}}</td>
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>
+
+{% endblock%}

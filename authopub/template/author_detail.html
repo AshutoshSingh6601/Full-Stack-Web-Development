@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Author Name</th>
+        <th scope="col">No of Books</th>
+        <th scope="col">No of publishers</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for details in author_detailed %}
+      <tr>
+        <th scope="row">{{details.authors.first_name}} {{details.author.last_name}}</th>
+        <td>{{no_of_book}}</td>
+        <td>{{details.publishers}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock  %}

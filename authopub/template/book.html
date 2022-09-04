@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form  method='POST' action="{% url 'book_form' %}" class="row g-3 container m-auto">
+    {% csrf_token %}
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Title</label>
+      <input type="text" name="title" class="form-control" id="inputEmail4">
+    </div>
+    
+    <div class="col-12">
+      <select name="authors" >
+        {% for authors in author_data %}
+          <option>{{ authors.first_name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    
+    <div class="col-12">
+        <select name="publishers" >
+          {% for publishers in publisher_data %}
+          <option>{{ publishers.name }}</option>
+          {% endfor %}
+        </select>
+    </div>
+    <div class="col-12">
+      <label for="inputCity" class="form-label">publication Date</label>
+      <input type="date" name="date" class="form-control" id="inputCity">
+    </div>
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+{% endblock %}

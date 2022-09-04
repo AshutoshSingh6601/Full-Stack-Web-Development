@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">List of Books</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for details in pub_books %}
+      <tr>
+        <th scope="row">{{details.title}}</th>
+        
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock  %}
