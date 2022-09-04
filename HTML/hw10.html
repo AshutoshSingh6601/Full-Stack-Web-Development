@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom right, white , rgb(211, 16, 16));
+        height: 100vh;
+    }
+    .box{
+        height: 150px;
+        width: 300px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 25px;
+        font-family:cursive;
+    }
+    .box1{
+        background: darkred;
+    }
+    .box2{
+        background: darkgreen;
+        position: relative;
+        top: 90px;
+        left: -130px;
+    }
+    .box3{
+        background: darkorange;
+        position: relative;
+        top: 175px;
+        left: -260px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box1 box">
+            <p>z-index-1</p>
+        </div>
+        <div class="box2 box">
+            <p>z-index0</p>
+        </div>
+        <div class="box3 box">
+            <p>z-index1</p>
+        </div>
+    </div>
+</body>
+</html>

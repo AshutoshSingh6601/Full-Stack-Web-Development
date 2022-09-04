@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- navbar started -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="http://3.bp.blogspot.com/-LSaJnR3JJus/W8XV_wJgEeI/AAAAAAAAAKM/tVOaeAa-s6cjd8fgKf66O022D8d3W0FJwCK4BGAYYCw/s1600/long-logo.png"
+                    alt="" class="img-fluid" width="200"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- text-transform=uppercase -->
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item">
+                        <!-- fs-5 = h5 ,fw= font width, margin-x = 2rem, 2rem = 20px -->
+                        <a class="nav-link active fs-6 mx-2 fw-bold " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 mx-2 fw-bold" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 mx-2 fw-bold" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 mx-2 fw-bold" href="#">Contact</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <!-- border:2rem  -->
+                    <button class="btn btn-outline-primary border-2" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar started end -->
+    <!-- secction1 started -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.ytimg.com/vi/RNnjUiZMeEM/maxresdefault.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://previews.agefotostock.com/previewimage/medibigoff/dbaf12dd941ee604d8b2f592c707f0ed/esy-040994085.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://static3.bigstockphoto.com/8/8/2/large1500/288481255.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- secction1 started ended -->
+
+
+    <!-- section2 started -->
+    <section class="my-5">
+        <div class="container">
+            <div class="content text-center">
+                <h1 > Featured Product</h1>
+                <small>Gada Electronics</small>
+                <hr class="w-25 mx-auto">
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center align-items-center">
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section2 started ended -->
+
+
+    <!-- section3 started stared -->
+    <section class="my-5">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-lg-2 justify-content-center align-items-center">
+                <div class="col my-2">
+                    <div class="card hover-card  text-danger">
+                        <img src="https://media.wired.com/photos/6230ff3f44425e17cb3601cf/master/pass/Apple-iPhone-SE-Colors-Gear.jpg" class="card-img " alt="...">
+                        <div class="card-img-overlay ">
+                          <h5 class="card-title ">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text text-primary">Last updated 3 mins ago</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card hover-card text-light">
+                        <img src="https://media.wired.com/photos/6230ff3f44425e17cb3601cf/master/pass/Apple-iPhone-SE-Colors-Gear.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">Card title</h5>
+                          
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section3 started ended -->
+
+    <!-- Hot Selling Products -->
+    <section class="my-5">
+        <div class="container">
+            <div class="content text-center">
+                <h1 > Hot Selling Productst</h1>
+                <small>Gada Electronics</small>
+                <hr class="w-25 mx-auto">
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center align-items-center">
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card shadow-lg style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col my-2">
+                    <div class="card" style="width: auto;">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product1</h5>
+                          <p class="card-text"><span class="fs-5">$10</span> <del>$15</del><br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident?</span></p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hot Selling Products end -->
+
+    <!-- Footer -->
+    <footer class="py-3 mt-4 bg-dark">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3" >
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+        </ul>
+        
+        <p class="text-center text-muted">© 2021 Company, Inc</p>
+      </footer>
+    <!-- Footer end -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>

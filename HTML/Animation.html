@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: black;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .round{
+        border: 1px solid black;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 17px;
+        background: red;
+        color: white;
+        width: 50px;
+        height: 50px;
+        transform: translate(0px, 0px);
+        animation: way .6s ease infinite alternate-reverse;
+        position: relative;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation-timing-function:  ; */
+        box-shadow: 3px 3px 3px rgb(231, 176, 176);
+        margin-right: 5px;
+    }
+    .round p{
+        display: inline-block;
+    }
+    .base{
+        width: 100%;
+        height: 2vh;
+        background: white;
+    }
+    .blue{
+        animation: way .6s .1s ease infinite alternate-reverse;
+        background: blue;
+    }
+    .pink{
+        animation: way .6s .2s ease infinite alternate-reverse;
+        background: pink;
+        color: black;
+    }
+    .white{
+        animation: way .6s .3s ease infinite alternate-reverse;
+        background: white;
+        color: black;
+    }
+    .yellow{
+        animation: way .6s .4s ease infinite alternate-reverse;
+        background: yellow;
+        color: black;
+    }
+    .green{
+        animation: way .6s .5s ease infinite alternate-reverse;
+        background: green;
+    }
+    .whitee{
+        animation: way .6s .6s ease infinite alternate-reverse;
+        background: rgb(177, 156, 156);
+    }
+    .bluee{
+        animation: way .6s .7s ease infinite alternate-reverse;
+        background: rgb(75, 75, 160);
+    }
+    @keyframes way {
+        from{
+            top: -100px;
+        }        
+        to{
+            top: 0px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="round"> <p> A </p> </div>
+    <div class="round blue"> <p> S </p> </div>
+    <div class="round pink"> <p> H </p> </div>
+    <div class="round white"> <p> U </p> </div>
+    <div class="round yellow "> <p> T </p> </div>
+    <div class="round green"> <p> O </p> </div>
+    <div class="round whitee"> <p> S </p> </div>
+    <div class="round bluee"> <p> H </p> </div>
+    <div class="base"></div>
+    </div>
+</body>
+</html>

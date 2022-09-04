@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal navbar</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .nav {
+        background: rgb(110, 109, 109);
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: fixed;
+    }
+    nav img{
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        
+    }
+
+    .link {
+        float: left;
+        list-style-type: none;
+        
+    }
+
+    a {
+        padding: 21px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+
+    a.active {
+        background: blue;
+        color: white;
+        
+    }
+    .last:last-child{
+        padding-right: 70px;
+    }
+
+    a:hover:not(.active) {
+        background: white;
+        color: black;
+    }
+
+    p,
+    h1 {
+        padding: 10px;
+    }
+
+    h1:nth-child(1) {
+        padding-top: 70px;
+    }
+    /* .header:last-child{
+        padding-bottom: 500px;
+    } */
+
+    p {
+        padding-bottom: 30px;
+    }
+</style>
+
+<body>
+    <nav class="nav">
+        <img src="/logo.png">
+        <ul>
+            <li class="link">
+                <a href="#Home" class="active">Home</a>
+            </li>
+            <li class="link">
+                <a href="#About">About</a>
+            </li>
+            <li class="link">
+                <a href="#More">More</a>
+            </li>
+            <li class="link last">
+                <a href="#Contect" >Contect</a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <h1 class="header" id="Home">Home</h1>
+        <p id="Home">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+        </p>
+        <h1 class="header" id="About">About</h1>
+        <p id="Home">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+        </p>
+        <h1 class="header" id="More">More</h1>
+        <p id="Home">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+        </p>
+        <h1 class="header" id="Contect">Contect</h1>
+        <p id="Home">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eligendi debitis commodi sed similique
+            eius
+            voluptas quasi laborum corporis aliquid.
+        </p>
+
+    </div>
+</body>
+
+</html>

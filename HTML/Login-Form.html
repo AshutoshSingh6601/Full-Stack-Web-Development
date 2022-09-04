@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Form</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container {
+        background: rgb(171, 214, 230);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        height: 95vh;
+        /* border: 2px solid black; */
+        /* margin: 2px; */
+        border-radius: 20px;
+    }
+
+    form {
+        /* border: 2px solid black; */
+        width: 75vw;
+        height: 80vh;
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 2px 3px 16px 0px black;
+    }
+
+    .container-1 {
+        width: 50%;
+        /* border: 2px solid black; */
+        height: 100%;
+        background: #fff;
+        padding: 0px 70px;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .container-2{
+        /* background: url(/formimg.png); */
+        /* background-size: cover; */
+        
+        /* background-repeat: no-repeat;
+        object-fit:fill;
+        object-position: center center; */
+        width: 50%;
+        height: 100%;
+        
+    }
+    .container-2 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    .container-1 h1 {
+        padding: 20px 0px 10px 0px;
+    }
+
+    .btn {
+        background: transparent;
+        padding: 10px 100px;
+        border: 0.5px solid rgb(212, 212, 212);
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: bold;
+        margin: 30px 0px 15px 0px;
+        cursor: pointer;
+    }
+
+    .btn-input {
+        padding: 10px 140px 10px 10px;
+        margin: 5px 5px;
+    }
+    .form{
+        display: block;
+        margin-top: 12px;
+    }
+
+    .hr p {
+        font-size: 12px;
+        font-family: cursive;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(187, 187, 187);
+        margin-right: 50px;
+    }
+
+    .hr p::after {
+        content: '';
+        background: rgb(187, 187, 187);
+        display: inline-block;
+        width: 27%;
+        height: 1px;
+        margin: 0px 0px 3px 12px;
+    }
+
+    .hr p::before {
+        content: '';
+        background: rgb(187, 187, 187);
+        display: inline-block;
+        width: 27%;
+        height: 1px;
+        margin: 0px 12px 3px 0px;
+    }
+    ::placeholder{
+        color: rgb(187, 187, 187);
+    }
+    .check{
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .forget{
+        display: inline-block;
+        margin-left: 80px;
+        color: rgb(139, 20, 250);
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .login{
+        display: block;
+        padding: 10px 135px;
+        /* font-size: 12px; */
+        background: rgb(139, 20, 250);
+        color: white;
+        margin-top: 20px;
+    }
+    .register span{
+        color: rgb(139, 20, 250);
+        cursor: pointer;
+    }
+    footer{
+        color: rgb(187, 187, 187);
+        margin-top: 20px;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+    <form action="">
+        <div class="container-1">
+            <h1>Login</h1>
+            <p>Lorem ipsum dolor sit amet consectetur!</p>
+            <button class="btn" value="Sing in with Google">Sing in with Google</button>
+            <div class="hr">
+                <p>or Sign in with Email</p>
+            </div>
+            <label for="email" class="form">Email*</label>
+            <input type="email" name="" id="email" class="btn btn-input " placeholder="mail@website.com" autocomplete="none" required>
+            <label for="password" class="form">Password*</label>
+            <input type="password" name="" id="password" maxlength="8" class="btn btn-input" placeholder="Min. 8 character" required>
+            <div class="check">
+                <input type="checkbox" name="" id="" checked>
+                <label for="">Remember me</label>
+            </div>
+            <p class="forget">Forget Password?</p>
+            <button class="login btn"> Login</button>
+            <p class="register">Not Register yet?<span>Create an Account</span></p>
+            <footer>
+                <p>&copy; All Rights Reserved.</p>
+            </footer>
+        </div>
+        <div class="container-2">
+            <img src="/formimg.png" >
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>

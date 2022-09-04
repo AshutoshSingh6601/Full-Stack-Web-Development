@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        color: white;
+        font-size: 20px;
+    }
+
+    header {
+        background-color: rgba(12, 156, 240, 0.87);
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .first {
+        display: flex;
+        height: 40vh;
+        justify-content: center;
+    }
+
+    .content {
+        background-image: linear-gradient(to bottom left, green, white);
+        width: 40%;
+        margin: 0.2%;
+    }
+
+    .side {
+        background-image: linear-gradient(to bottom right, purple, white);
+        width: 20%;
+        margin: 0.2%;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second {
+        display: flex;
+        height: 40vh;
+        justify-content: center;
+    }
+
+    .box {
+        background-image: linear-gradient(to right, red, yellow);
+        width: 30%;
+        margin: 0.2%;
+
+    }
+
+    footer {
+        background-color: rgba(12, 156, 240, 0.87);
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <header>
+        <p>.header</p>
+    </header>
+    <div class="container">
+        <div class="first">
+            <div class="content center">
+                <p>.main_content</p>
+            </div>
+            <div class="side center">
+                <p>.sidebar</p>
+            </div>
+        </div>
+        <div class="second">
+            <div class="box center">
+                <p>.twin</p>
+            </div>
+            <div class="box center">
+                <p>.twin</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>.footer</p>
+    </footer>
+</body>
+
+</html>

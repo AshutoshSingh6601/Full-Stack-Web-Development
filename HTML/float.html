@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        border: 2px solid black;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container-1 {
+        margin: 0.5%;
+        margin-left: 10%;
+    }
+
+    .container-1 .box-1 {
+        float: left;
+        width: 45%;
+
+    }
+
+    .container-1 .box-2 {
+        float: left;
+        width: 45%;
+    }
+
+    .b1 {
+        background: rgb(172, 165, 165);
+    }
+
+    .b23 {
+        background: linear-gradient(to right, rgb(211, 203, 203), rgb(172, 165, 165));
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid black; */
+        height: 40vh;
+    }
+
+    .container-2 {
+        margin: 0.5%;
+        margin-left: 10%;
+    }
+
+    .container-2 .box-1 {
+        float: left;
+        width: 30%;
+    }
+
+    .container-2 .box-2 {
+        float: left;
+        width: 30%;
+    }
+
+    .container-2 .box-3 {
+        float: left;
+        width: 30%;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="container-1">
+            <div class="box-1 b1 box">
+                <p>box-1</p>
+            </div>
+            <div class="box-2 b23 box">
+                <p>box-2</p>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="box-1 b1 box">
+                <p>box-1</p>
+            </div>
+            <div class="box-2 b23 box">
+                <p>box-2</p>
+            </div>
+            <div class="box-3 b23 box">
+                <p>box-3</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

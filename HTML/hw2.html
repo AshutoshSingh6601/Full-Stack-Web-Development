@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+        background-color: lightpink;
+    }
+
+    .container {
+        background-color: rgb(167, 230, 74);
+        border: 2px solid black;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 25%;
+        height: 50vh;
+        font-weight: 200px;
+        contain: wrap;
+    }
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        margin: 10px;
+        width: 50%
+        
+    }
+
+    input{
+        border-radius: 8px;
+        
+    }
+    .btn {
+        flex-direction: row;
+        margin: 10px;
+        width: 36%;
+        padding: 3px 13px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    @media screen and (max-width: 1179px) {
+  .container {
+    background-color: yellow;
+    width: 55%;
+    height: 30vh;
+  }
+  
+}
+</style>
+
+<body>
+    <div class="container">
+        <h2>login</h2>
+        <div class="user">
+            <label for="user">User</label>
+            <input type="text" placeholder="Enter Name" name="user">
+        </div>
+        <div class="user">
+            <label for="pass">Pass</label>
+            <input type="password" placeholder="Enter Password" name="pass">
+        </div>
+        <div>
+            <input type="button" value="Button" class="btn">
+            <input type="button" value="Reset" class="btn">
+        </div>
+
+
+    </div>
+</body>
+
+</html>

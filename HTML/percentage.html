@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .line {
+        width: 50%;
+        height: 2vh;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .html,
+    .css,
+    .java,
+    .backend {
+        animation: html 4s 2s ease infinite;
+        margin: 1px 0px;
+        /* height: 1.5vh; */
+        background: black;
+        width: 0px;
+        border-radius: 10px;
+        height: 8px;
+    }
+    .css{
+        animation: css 4s 2s ease infinite;
+    }
+    .java{
+        animation: java 4s 2s ease infinite;
+    }
+    .backend{
+        animation: back 4s 2s ease infinite;
+    }
+
+    @keyframes html {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 85%;
+        }
+    }
+
+    @keyframes css {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 75%;
+        }
+    }
+
+    @keyframes java {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 65%;
+        }
+    }
+    @keyframes back {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 95%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>HTML</h1>
+        <div class="line">
+            <div class="html"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>CSS</h1>
+        <div class="line">
+            <div class="css"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>JAVA SCRIPT</h1>
+        <div class="line">
+            <div class="java"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>BACKEND</h1>
+        <div class="line">
+            <div class="backend"></div>
+        </div>
+    </div>
+</body>
+
+</html>

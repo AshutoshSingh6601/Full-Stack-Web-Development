@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+       border: 2px solid black; 
+       text-align: center;
+       height: 80vh;
+    }
+
+    input{
+
+        padding: 1%;
+        border-radius: 20px;
+        margin: 7% 4% 0% 5%;
+
+        
+    }
+    .t1{
+        /* spread radius */
+        box-shadow: 5px 8px 12px 3px black;
+    }
+    .t2{
+        /* miltiple shadows */
+        box-shadow: 5px 5px blue, 10px 10px green, 15px 15px red;
+    }
+    .t3{
+        /* inset keywors */
+        box-shadow: 5px 10px 20px green inset;
+    }
+    .t3:hover{
+        border-radius: 0px;
+        /* background-color: black; */
+        color: white;
+        font-weight: bold;
+        /* padding: 0px; */
+        box-shadow: none;
+
+    }
+    .t4{
+        box-shadow: 10px 10px 5px #aaaaaa;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="search_bar">
+            <input type="text" placeholder="search name" class="t1">
+            <input type="text" placeholder="search name" class="t2">
+            <input type="text" placeholder="search name" class="t3">
+            <input type="text" placeholder="search name"class="t4">
+        </div>
+
+    </div>
+</body>
+</html>

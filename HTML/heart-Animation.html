@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Animation</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        color: white;
+        animation: heart 1s .5s 2 ease-in-out normal ;
+        
+    }
+    @keyframes heart {
+        0%{
+            transform: scale(1, 1);
+        }
+        50%{
+            transform: scale(1.5, 1.5);
+        }
+        100%{
+            transform: scale(2, 2);
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <img src="/Heart.jpeg">
+    </div>
+</body>
+</html>

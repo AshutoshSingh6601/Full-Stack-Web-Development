@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ---------------BUTTON---------------- */
+    .main {
+        position: relative;
+        display: inline-block;
+        top: 20px;
+        left: 30px;
+    }
+
+    .main-btn {
+        border: none;
+        padding: 15px;
+        min-width: 130px;
+        background: lightgreen;
+        cursor: pointer;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+    }
+
+    .main-content {
+        display: none;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        width: 0px;
+        min-width: 130px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .main-content a {
+        background: white;
+        display: block;
+        padding: 7px;
+        text-decoration: none;
+        color: black;
+        transition: all .3s ease;
+    }
+
+    main .main-content a {
+        transition: all .3s ease;
+    }
+
+    .main-content a:hover {
+        transition: all .3s ease;
+        background: pink;
+        color: white;
+    }
+
+    .main:hover .main-content {
+        transition: all .9s ease;
+        display: block;
+    }
+
+    .main:hover .main-btn {
+        transition: all .3s ease;
+        background: rgb(84, 131, 84);
+        color: white;
+    }
+
+    /* ------------------------responsive image--------------------- */
+    .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+
+    .img-1 {
+        background: rgb(236, 227, 227);
+        height: 40vh;
+        width: 23vw;
+        margin: 50px;
+        border-radius: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding-right: 20px;
+        /* float: left; */
+    }
+
+    .img-1 img {
+        transition: all .3s ease;
+        /* transform: rotate(6deg); */
+        /* margin-bottom: 10px; */
+        box-shadow: 0px 8px 15px 0px rgba(199, 87, 87, 0.829);
+        z-index: 1;
+        height: 30vh;
+        width: 20vw;
+        margin: 15px 0px 10px 20px;
+        border-radius: 20px;
+
+
+    }
+
+    img:hover {
+        transform: rotate(4deg);
+        z-index: 1;
+    }
+
+    p {
+        color: black;
+        font-size: 20px;
+        font-family: cursive;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    /* -----------------------------HR------------------------------------- */
+    .hr p {
+        /* text-align: center; */
+        padding: 0px 50px;
+        color: rgb(187, 187, 187);
+    }
+
+    .hr p::after {
+        content: '';
+        background: rgb(187, 187, 187);
+        display: inline-block;
+        height: 2px;
+        width: 200px;
+        margin: 0px 0px 3px 5px;
+    }
+
+    .hr p::before {
+        content: '';
+        background: rgb(187, 187, 187);
+        display: inline-block;
+        height: 2px;
+        width: 200px;
+        margin: 0px 5px 3px 0px;
+    }
+</style>
+
+<body>
+    <!-- ---------------------------BUTTON--------------------------- -->
+    <div class="main">
+        <button class="main-btn">Button</button>
+        <div class="main-content">
+            <a href="#">link-1</a>
+            <a href="#">link-2</a>
+            <a href="#">link-3</a>
+        </div>
+    </div>
+    <!-- ----------------------------Responsive----------------------- -->
+
+    <div class="img">
+        <div class="img-1">
+            <img src="/fruit.jpg">
+            <p>Here Is Ashutosh Singh</p>
+        </div>
+    <!-- </div>
+    <div class="img"> -->
+        <div class="img-1">
+            <img src="/fruit.jpg">
+            <p>Here Is Shani Singh</p>
+        </div>
+    <!-- </div>
+    <div class="img"> -->
+        <div class="img-1">
+            <img src="/fruit.jpg">
+            <p>Here Is Rutik Awale</p>
+        </div>
+    </div>
+
+    <!-- -----------------------------HR------------------------------------- -->
+    <div class="hr">
+        <p>or</p>
+    </div>
+    <div class="logo">
+        <i class="fas fa-ad"></i>
+    </div>
+
+</body>
+
+</html>

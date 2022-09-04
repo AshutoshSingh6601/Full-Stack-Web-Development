@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee-tech</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 70%;
+        height: 85vh;
+        /* border: 1px solid black; */
+        background: rgba(241, 236, 236, 0.849);
+    }
+
+    header {
+        height: 140px;
+        width: 99%;
+        border: 1px solid black;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(-40deg, darkblue 50%, darkred 50%);
+    }
+    header h1{
+        color: white;
+        font-size: 130px;
+        letter-spacing: 40px;
+        /* word-spacing: -15px; */
+        
+    }
+    header h1 span{
+        display: inline-block;
+        letter-spacing: -30px;
+        transition: all .9s ease;
+    }
+
+    section {
+        display: inline-block;
+        /* width: 100%; */
+
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28.5%;
+        height: 30vh;
+        border: 1px solid black;
+        float: left;
+        margin: 5px;
+        padding-left: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .bx-1{
+        color: white;
+        background: lightgreen; 
+        transition:all .5s ease;       
+    }
+    .bx-2{
+        background: rgb(115, 194, 221);
+        transition:all .5s ease;
+    }
+    .bx-3{
+        background: rgb(35, 111, 158);
+        transition:all .5s ease;
+    }
+    .bx-1:hover{
+        width: 27%;
+        height: 25vh;
+        margin: 13px;
+        /* transition:all .3s ease; */
+        border-radius: 20px;
+    }
+    .bx-2:hover{
+        width: 27%;
+        height: 25vh;
+        margin: 15px;
+        border-radius: 20px;
+    }
+    .bx-3:hover{
+        width: 27%;
+        height: 25vh;
+        margin: 15px;
+        border-radius: 20px;
+    }
+    aside {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 35%;
+        height: 80px;
+        border: 1px solid black;
+        padding: 3px;
+        /* word-wrap: break-word;
+        text-overflow: ellipsis;
+        overflow: hidden; */
+        color: white;
+        background: black;
+        cursor: pointer;
+    }
+    aside:hover{
+        transform: rotate(360deg);
+        transition: all .9s ease;
+        border-radius: 10px;
+    }
+
+    .side {
+        border: 1px solid black;
+        width: 9.5%;
+        height: 50vh;
+        /* float: right; */
+        margin: 5px;
+        padding: 10px;
+        display: inline-block;
+        color: white;
+        background: black;
+    }
+
+    .full {
+        width: 88%;
+        border: 1px solid black;
+        /* padding: 10px; */
+        background: rgb(216, 230, 16);
+        /* margin-bottom: 20%; */
+        margin: 5px;
+        clear: both;
+        position: relative;
+        top: -120px;
+        border-radius: 20px;
+    }
+    /* footer::after {
+        content: '';
+        display: table;
+        clear: both;
+    } */
+    span {
+        display: block;
+        text-align: center;
+        /* line-height: 50px; */
+        transition:all .2s ease;
+        padding: 4px;
+    }
+    span:hover{
+        color: white;
+        cursor: pointer;
+    }
+
+    footer {
+        width: 99%;
+        border: 1px solid black;
+        position: relative;
+        top: -110px;
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+        background: rgb(196, 229, 241);
+    }
+    h1 span:hover{
+        transform: rotate(360deg);
+        /* transition: all .9s ease; */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> <span>Z</span> EE tech</h1>
+        </header>
+        <section>
+            <article class="bx-1">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quasi illum dicta voluptate
+                    accusamus pariatur porro,
+                </p>
+
+                <aside>
+                    <p>
+                        ratione fugit molestiae laudantium
+                    </p>
+                </aside>
+            </article>
+            <article class="bx-2">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quasi illum dicta voluptate
+                    accusamus pariatur porro,
+                </p>
+
+                <aside>
+                    <p>
+                        ratione fugit molestiae
+                    </p>
+                </aside>
+            </article>
+            <article class="bx-3">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quasi illum dicta voluptate
+                    accusamus pariatur porro,
+                </p>
+
+                <aside>
+                    <p>
+                        ratione fugit molestiae
+                    </p>
+                </aside>
+            </article>
+            <div class="side">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, atque. Lorem ipsum dolor Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </section>
+
+        <div class="full">
+            <p>
+                <span> Lorem ipsum dolor sit, amet</span> <span>Lorem ipsum dolor sit.</span> <span>Lorem ipsum dolor
+                    sit.</span>
+                <span>consectetur adipisicing.</span>
+            </p>
+        </div>
+    
+        <footer>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

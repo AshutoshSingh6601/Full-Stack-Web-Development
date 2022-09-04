@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h2,
+    p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0px;
+        border-radius: 20px;
+        border: 1px solid lightgray;
+        margin-top: 30px;
+        resize: vertical;
+    }
+
+    .box-30 {
+        width: 30%;
+        float: left;
+    }
+
+    .box-70 {
+        width: 70%;
+        float: left;
+    }
+
+    label {
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    input[type=submit] {
+        padding: 15px 40px;
+        color: white;
+        background: rgb(57, 201, 57);
+        border-radius: 20px;
+        border: transparent;
+        /* doubt */
+        float: right;
+        cursor: pointer;
+    }
+
+    .input::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .container {
+        background: rgb(236, 227, 227);
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    @media screen and (max-width:400px) {
+
+        .box-30,
+        .box-70,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            margin-top: 10px;
+        }
+
+        label {
+            margin-top: 5px;
+        }
+    }
+</style>
+
+<body>
+    <h2>Here is a form</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="container">
+        <form action="">
+            <!-- fname -->
+            <div class="input">
+                <div class="box-30">
+                    <label for="fname">FirstName</label>
+                </div>
+                <div class="box-70">
+                    <input type="text" name="" placeholder="First Name" id="fname">
+                </div>
+            </div>
+            <!-- lname -->
+            <div class="input">
+                <div class="box-30">
+                    <label for="lname">LastName</label>
+                </div>
+                <div class="box-70">
+                    <input type="text" name="" placeholder="Last Name" id="lname">
+                </div>
+            </div>
+            <!-- select -->
+            <div class="input">
+                <div class="box-30">
+                    <label for="city">Select The City</label>
+                </div>
+                <div class="box-70">
+                    <select name="" id="city">
+                        <option value="India">India</option>
+                        <option value="India">India</option>
+                        <option value="India">India</option>
+                        <option value="India">India</option>
+                    </select>
+                </div>
+            </div>
+            <!-- lname -->
+            <div class="input">
+                <div class="box-30">
+                    <label for="massage">Massage</label>
+                </div>
+                <div class="box-70">
+                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="input">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

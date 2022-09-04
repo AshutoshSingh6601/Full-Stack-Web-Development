@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    .login {
+        background-image: linear-gradient(to top left, rgb(128, 110, 107), rgb(212, 200, 131));
+        text-align: center;
+        width: 50%;
+
+    }
+
+    .login h1 {
+        text-align: center;
+        margin: 100px 0px 40px 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+        background: white;
+        box-shadow: 0px 3px 5px black;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+        padding: 1px;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        margin-bottom: 30px;
+        padding: 5px;
+        padding-right: 100px;
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 5px;
+        box-shadow: 0px 0px 5px black;
+    }
+
+    #email {
+        margin-bottom: 15px;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    button {
+        background-color: rgb(255, 105, 79);
+        color: white;
+        border-radius: 20px;
+        padding: 10px 40px;
+        margin-top: 16px;
+        /* cursor style */
+        cursor: pointer;
+    }
+
+    .login h4 {
+        color: rgb(240, 231, 240);
+        font-weight: 100;
+        font-family: 'Lora', serif;
+        margin-bottom: 7px;
+    }
+
+    .html {
+        /* background-image: linear-gradient(to top left, tomato, gold); */
+        text-align: center;
+        background: conic-gradient(red, yellow, green);
+        width: 50%;
+        /* border-top-left-radius: 140px; */
+
+    }
+
+    .html h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 250px;
+        color: white;
+    }
+
+    .html h3 {
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <h1>Login</h1>
+            <img src="https://cdn-icons-png.flaticon.com/128/20/20673.png" alt="imge">
+            <img src="https://cdn-icons.flaticon.com/png/128/2504/premium/2504839.png?token=exp=1642401087~hmac=1cede46bde36c5ad1c592a925dbd8815"
+                alt="imge">
+            <h4>or use your Account</h4>
+            <div class="input">
+                <input type="email" placeholder="Email" id="email">
+
+                <input type="password" placeholder="Password">
+            </div>
+            <h4>Forget your password?</h4>
+            <button type="submit" name="LOG IN"> LOG IN</button>
+        </div>
+        <div class="html">
+            <h1>HTML CSS Login Form</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3> Amet, animi? Dolor quae laboriosam nihil quo</h3>
+            <h3>amet animi iure dicta consequatur!</h3>
+        </div>
+    </div>
+</body>
+
+</html>

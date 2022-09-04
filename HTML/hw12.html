@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw12</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    section{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        /* align-items: center;
+        justify-content: center; */
+    }
+    article{
+        background: whitesmoke;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    aside{
+        background: whitesmoke;
+        width: 50vw;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+        font-family: cursive;
+    }
+
+    .line-1, .line-2{
+        background: linear-gradient(to right, red, gold);
+        height: 2px;
+        width: 80px;
+        
+    }
+    .line-2{
+        width: 20px;
+        position: relative;
+        top: -2px;
+        left: 90px;
+    }
+    
+
+</style>
+<body>
+    <section>
+        <article>
+            <p>Lorem, ipsum.</p>
+            <i class="fas fa-ad"></i>
+            <i class="fas fa-ad"></i>
+            <i class="fas fa-ad"></i>
+        </article>
+        <aside>
+            <h4>Best Open Source</h4>
+            <h1>HTML & CSS Editors</h1>
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+        </aside>
+    </section>
+</body>
+</html>
