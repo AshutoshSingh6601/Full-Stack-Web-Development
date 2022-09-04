@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Nav Active</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav{
+        background: pink;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li{
+        list-style: none;
+        padding: .5rem;
+        margin: .5rem;
+        cursor: pointer;
+    }
+    .active{
+        background: yellow;
+        color: red;
+    }
+</style>
+
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li class="active">Home</li>
+                <li>About</li>
+                <li>Contact US</li>
+            </ul>
+        </nav>
+    </section>
+</body>
+
+<script>
+
+$(document).ready(function(){
+  $("li").click(function(){
+    $("li").removeClass('active');
+    $(this).addClass('active');
+  });
+});
+
+</script>
+
+</html>
+
+
+
+<!-- $(document).ready(function(){
+    $('li').click(function(){
+        $('li').removeClass('active');
+        $(this).addClass('active');
+    });
+}); -->

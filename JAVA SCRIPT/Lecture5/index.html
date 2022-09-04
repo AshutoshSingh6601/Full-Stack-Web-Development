@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding: 1%;
+    }
+    #container{
+        color: black;
+        margin: 1%;
+        width: 20%;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+    button{
+        border: none;
+        border-radius: 10px;
+        background: lightgreen;
+        margin: 10px;
+    }
+</style>
+<body>
+    <h1>Button</h1>
+    <div id="container">blue to red</div>
+    <button onclick="changecolour()"> click to change colour </button>
+    <button onclick="changecolor()"> click to change colour </button>
+    <button ondblclick="colortoggle()"> click to change colour </button>
+    <button onclick="colortoggles()"> click to change colour </button>
+</body>
+<script src="script.js"></script>
+</html>

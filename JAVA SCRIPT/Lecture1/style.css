@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 10px;
+    font-size: 15px;
+    background: lightgreen;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:focus{
+    background: pink;
+}
+
+h2,
+p,
+button{
+    margin: 30px;
+}
