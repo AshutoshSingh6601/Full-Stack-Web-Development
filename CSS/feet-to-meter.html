@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-size: 2.7rem;
+    }
+    input{
+        width: 20rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <label for="">feet</label>
+        <input type="number" name="" id="" oninput="speedConvertor(this.value)" onchange="speedConvertor(this.value)">
+        <p>meter: <span id="meter">000</span></p>
+    </div>
+</body>
+<script>
+    function speedConvertor(x){
+        // x = parseFloat(x);
+        document.getElementById("meter").innerHTML = x*0.0022046;
+    }
+</script>
+</html>

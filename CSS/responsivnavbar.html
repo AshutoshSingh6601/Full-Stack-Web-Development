@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiv Nav Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav {
+        background: lightgreen;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .link ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link ul li {
+        list-style: none;
+        margin: 10px;
+        padding: 15px;
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* 760 */
+    .hambar {
+        display: none;
+
+    }
+
+    .hambar i {
+        font-size: 30px;
+        margin: 30px 30px 0px 0;
+        cursor: pointer;
+    }
+
+    @media (max-width: 760px) {
+        .hambar {
+            display: block;
+        }
+
+        .link {
+            display: none;
+        }
+    }
+
+    .click-nav ul li{
+        color: black;
+        /* margin: 1000px; */
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        padding: 3px;
+        margin: 2px;
+        background: pink;
+    }
+    .click-nav{
+        display: none;
+    }
+    .click{
+        display: block;
+    }
+
+</style>
+
+<body>
+    <nav>
+        <img src="https://i.redd.it/tu3gt6ysfxq71.png" alt="" class="logo">
+        <div class="link">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="hambar" onclick="show_navbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    
+    <div class="click-nav" id="demo">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+</body>
+<script>
+function show_navbar(){
+     var element = document.getElementById('demo')
+     element.classList.toggle('click')
+}
+</script>
+
+</html>
